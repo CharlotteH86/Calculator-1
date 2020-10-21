@@ -24,19 +24,6 @@ function inputDecimal(dot) {
     }
 }
 
-/*function handleOperator(nextOperator){
-    const {firstOperand, displayValue, operator} = calculator;
-    const inputValue = parseFloat(displaValue);
-
-    if(firstOperand === null && !isNaN(inputValue)){
-        calculator.firstOperand = inputValue;
-    }
-    calculator.waitingForSecondOperand = true;
-    calculator.operator = nextOperator;
-
-    console.log(calculator)
-}*/
-
 function handleOperator(nextOperator){
     const {firstOperand, displayValue, operator} = calculator
     const inputValue = parseFloat(displayValue);
@@ -56,8 +43,6 @@ function handleOperator(nextOperator){
 
     calculator.waitingForSecondOperand = true;
     calculator.operator = nextOperator;
-    //handleOperator(target.value);
-    //updateDisplay();
     console.log(calculator)
 }
 
